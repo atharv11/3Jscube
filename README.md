@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧊 Scroll-Animated 3D Cube with React Three Fiber
 
-## Getting Started
+This project renders a textured 3D cube that rotates based on scroll position using **React Three Fiber** and **drei** helpers.
 
-First, run the development server:
+## 🚀 Features
+
+- Scroll-based cube rotation with `ScrollControls`
+- 3D cube with different textures on each face
+- Orbit controls (drag to rotate the scene)
+- Ambient and directional lighting
+- Responsive full-screen canvas
+
+## 📸 Preview
+![ScreenRecording2025-04-25191404-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/109f8b10-0d7c-4b64-a8f0-6b81098816aa)
+
+
+
+## 🛠️ Tech Stack
+
+- React
+- React Three Fiber
+- drei
+- three.js
+
+## 📂 Folder Structure
+
+📁 public └── assets/ ├── grass.jpg ├── senpaisan.jpg └── charizard partner1.jpg
+
+📁 src └── Cube.jsx (main 3D component)
+
+bash
+Copy
+Edit
+
+## 🧰 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev  # or npm start
+💡 How It Works
+The cube rotates based on scroll position, accessed through useScroll() from drei.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+useFrame() hooks into the animation loop to continuously update rotation.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Textures are applied to each face of the cube using TextureLoader.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🖼️ Textures Used
+/assets/grass.jpg
 
-## Learn More
+/assets/senpaisan.jpg
 
-To learn more about Next.js, take a look at the following resources:
+/assets/charizard partner1.jpg
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✍️ Author
+Your Name – @yourusername
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📄 License
+This project is open source and available under the MIT License.
 
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want to include deploy instructions (like Vercel/Netlify) or if you'd like help generating a project banner or GIF for the README. Want me to drop this into a file for you?
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
