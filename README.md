@@ -1,4 +1,4 @@
-# 🧊 Scroll-Animated 3D Cube with React Three Fiber
+# 🧊 basic 3D Cube with React Three Fiber Three JS
 
 This project renders a textured 3D cube that rotates based on scroll position using **React Three Fiber** and **drei** helpers.
 
